@@ -255,7 +255,11 @@ public enum SpelMessage {
 
 	/** @since 4.3.17 */
 	FLAWED_PATTERN(Kind.ERROR, 1073,
-			"Failed to efficiently evaluate pattern ''{0}'': consider redesigning it");
+			"Failed to efficiently evaluate pattern ''{0}'': consider redesigning it"),
+
+	MAX_EXPRESSION_LENGTH_EXCEEDED(Kind.ERROR, 1079,
+			"SpEL expression is too long, exceeding the threshold of ''{0}'' characters");
+
 
 
 	private final Kind kind;
